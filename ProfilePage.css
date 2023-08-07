@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;     /*assign a color to the background*/
+}
+h1 {
+    text-align: center;               /*alligning the context of h1 to center*/
+    padding: 20px;                    /*creating a space of 20 px around the context of h1*/
+}
+.avatar { 
+    text-align: center;               /*changing the division of the avatar image to center*/
+    margin-bottom: 20px;              /*givin a margin of 20 px to the division*/
+}
+.avatar img {
+    width: 200px;                   /*setting the width of avatar img to 200 px*/
+    height: 200px;                  /*setting the height of avatar img to 200 px*/
+    border-radius: 50%;             /*giving avatar img a border to make it a circle*/
+    border: 2px solid #070b10;    /*making the border solid and assign it a color*/
+}
+form {  
+    width: 70%;                     /*setting width for form tag */
+    margin: auto;                   /*setting margin to auto for  form tag to look in the middle*/
+    background: #eeebeb;          /*setting background color for form tag*/  
+    padding: 20px;                  /*creating a space of 20 px around the form*/
+    border-radius: 5px;             /*giving form a border radius */
+    border: 2px solid #06c3f3e2;  /*making the border solid and assign it a color*/
+}
+label {
+    display: block;                 /*Displays all labels as a block */
+    font-weight: bold;              /*make the text content of label thicker*/
+    margin-bottom: 5px;             /*giving a margin in the bottom to each label*/
+}
+#lastName, #firstName, #mobileNumber, #postCode, #state, #area, #email, #country, #stateRegion{
+    width: 99%;                     /*setting width for all iputs with the matching id's*/
+    padding: 10px;                  /*creating a space of 20 px around the inputs with the matching id's*/
+    margin-bottom: 10px;            /*giving a margin in the bottom to each input with matching id's*/
+    border-radius: 3px;             /*giving inputs with the matching id's a border radius*/
+    border: 1px solid #121212;    /*making the border solid and assign it a color to each inuput with matching id's*/
+}
+#submit{
+    background-color: #007bff;    /*setting the background color of the input submit*/
+    color: #eeebeb;               /*setting the color of submit input context*/
+    padding: 10px 20px;             /*set the top and bottom padding to 10 px , right and left padding to 20px*/
+    border: none;                   /*take off the border of the input typer submit*/
+    border-radius: 3px;             /*giving form a border radius*/
+}
+
+
