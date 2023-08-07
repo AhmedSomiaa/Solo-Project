@@ -30,7 +30,7 @@ label {
     font-weight: bold;              /*make the text content of label thicker*/
     margin-bottom: 5px;             /*giving a margin in the bottom to each label*/
 }
-#lastName, #firstName, #mobileNumber, #postCode, #state, #area, #email, #country, #stateRegion{
+#lastName, #firstName, #mobileNumber, #postCode, #state, #area, #email, #country, #stateRegion, #psw{
     width: 99%;                     /*setting width for all iputs with the matching id's*/
     padding: 10px;                  /*creating a space of 20 px around the inputs with the matching id's*/
     margin-bottom: 10px;            /*giving a margin in the bottom to each input with matching id's*/
@@ -43,6 +43,34 @@ label {
     padding: 10px 20px;             /*set the top and bottom padding to 10 px , right and left padding to 20px*/
     border: none;                   /*take off the border of the input typer submit*/
     border-radius: 3px;             /*giving form a border radius*/
+}
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+.valid {
+    color: green;
+  }
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+.invalid {
+    color: red;
+}
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
 }
 
 

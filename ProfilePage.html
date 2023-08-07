@@ -20,30 +20,37 @@
         
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" name="lastName" required><br><br>
-        
-                <label for="mobileNumber">Mobile Number:</label>
-                <input type="tel" id="mobileNumber" name="mobileNumber" required><br><br>
-        
-                <label for="postCode">Post code:</label>
-                <input type="text" id="postCode" name="postCode" required><br><br>
-        
-                <label for="state">State:</label>
-                <input type="text" id="state" name="state"><br><br>
-        
-                <label for="area">Area:</label>
-                <input type="text" id="area" name="area"><br><br>
-        
+                
+                <label for="psw">Password:</label>
+                <input type="password" id="psw" name="psw">
+                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
         
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" required><br><br>
+                
                 <label for="country">Country:</label>
                 <input type="text" id="country" name="country" required><br><br>
-        
+                
+                <label for="area">Area:</label>
+                <input type="text" id="area" name="area"><br><br>
+                
                 <label for="stateRegion">State/Region:</label>
                 <input type="text" id="stateRegion" name="stateRegion"><br><br>
-        
+                
+                <label for="postCode">Post code:</label>
+                <input type="text" id="postCode" name="postCode" required><br><br>
+
                 <input type="submit" value="Submit" id="submit">
             </form>
+            <p id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </p>
         </div>
     </div>
     <script>src="ProfilePage.js"</script>
