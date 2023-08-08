@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;     /*assign a color to the background*/
+}
+h1 {
+    text-align: center;               /*alligning the context of h1 to center*/
+    padding: 20px;                  /*creating a space of 20 px around the context of h1*/
+}
+label {
+    display: block;                 /*Displays all labels as a block */
+    font-weight: bold;              /*make the text content of label thicker*/
+    margin-bottom: 10px;             /*giving a margin in the bottom to each label*/
+}
+#form {
+    width: 70%;                     /*setting width for form tag */
+    margin: auto;                   /*setting margin to auto for  form tag to look in the middle*/
+    background: #eeebeb;          /*setting background color for form tag*/  
+    padding: 20px;                  /*creating a space of 20 px around the form*/
+    border-radius: 5px;             /*giving form a border radius */
+    border: 2px solid #06c3f3e2;  /*making the border solid and assign it a color*/
+}
+
