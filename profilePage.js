@@ -1,49 +1,41 @@
-var firstName = $('#firstName').val();
-var lastName = $('#lastName').val();
-var password = $('#psw').val();
-var mobileNumber = $('#mobileNumber').val();
-var postCode = $("#postCode").val();
-var area = $('#area').val();
-var email = $('#email').val();
-var country = $("#country").val();
-var stateRegion = $("#stateRegion").val()
-$('#password').on("keyup", function() {
+$('#psw').on("keyup", function() {
+    var password = $('#psw').val();
     var lowerCaseLetters = /[a-z]/g;
     var upperCaseLetters = /[A-Z]/g;
     var numbers = /[0-9]/g;
     
-    if (password.match(lowerCaseLetters)) {
-        $('#letter').removeClass("invalid").addClass("valid");
+    if (password.match(lowerCaseLetters)) {                          // Test if the value of password contains a lower case later
+        $('#letter').removeClass("invalid").addClass("valid");      // change from class invalid to valid
     } else {
-        $('#letter').removeClass("valid").addClass("invalid");
+        $('#letter').removeClass("valid").addClass("invalid");      // change from class valid to invalid
     }
     
-    if (password.match(upperCaseLetters)) {
-        $('#capital').removeClass("invalid").addClass("valid");
+    if (password.match(upperCaseLetters)) {                         // Test if the value of password contains a upper case later
+        $('#capital').removeClass("invalid").addClass("valid");     // change from class invalid to valid
     } else {
-        $('#capital').removeClass("valid").addClass("invalid");
+        $('#capital').removeClass("valid").addClass("invalid");     // change from class valid to invalid
     }
     
-    if (password.match(numbers)) {
-        $('#number').removeClass("invalid").addClass("valid");
+    if (password.match(numbers)) {                                  // Test if the value of password contains a number
+        $('#number').removeClass("invalid").addClass("valid");      // change from class invalid to valid
     } else {
-        $('#number').removeClass("valid").addClass("invalid");
+        $('#number').removeClass("valid").addClass("invalid");      // change from class valid to invalid
     }
     
-    if (password.length >= 8) {
-        $('#length').removeClass("invalid").addClass("valid");
+    if (password.length >= 8) {                                     // Test if the length of password is longer than 8
+        $('#length').removeClass("invalid").addClass("valid");      // change from class invalid to valid
     } else {
-        $('#length').removeClass("valid").addClass("invalid");
+        $('#length').removeClass("valid").addClass("invalid");      // change from class valid to invalid
     }
 });
 $('#psw').on("focus", function() {
-    $("#message").css("display", "block");
+    $("#message").css("display", "block"); //display the div with id message to screen when the cursor is in password input
 });
 $('#psw').on("blur", function() {
-    $("#message").css("display", "none");
+    $("#message").css("display", "none");  //display the div with id message out of the screen when the cursor is out password input
 });
 $("#submit").click( function() {
-    var newData = {
+    var newData = {                        //Put all the values of the form inputs in object
         firstName: $('#firstName').val(),
         lastName: $('#lastName').val(),
         password: $('#psw').val(),
@@ -55,9 +47,10 @@ $("#submit").click( function() {
         stateRegion: $("#stateRegion").val()
     }
     saveData(newData);
+
 })
 function saveData(Data) {
-    localStorage.setItem("FirstName", Data.firstName);
+    localStorage.setItem("FirstName", Data.firstName);          //Store all the values of the inputs stored in our object inside the local storage
     localStorage.setItem("lastName", Data.lastName);
     localStorage.setItem("password", Data.password);
     localStorage.setItem("email", Data.email);

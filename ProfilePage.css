@@ -45,21 +45,21 @@ label {
     border-radius: 3px;             /*giving form a border radius*/
 }
 #message {
-    display:none;
-    background: #f1f1f1;
-    color: #000;
-    position: relative;
-    padding: 20px;
-    margin-top: 10px;
+    display:none;                   /*display the div message to none once the page is loaded*/
+    background: #f1f1f1;          /*setting the color of background*/  
+    color: #000;                  /*setting the color*/
+    position: relative;             /*setting position to relative*/
+    padding: 20px;                  /*set all paddings to 20px*/
+    margin-top: 10px;               /*set margin top to 10*/
 }
-#message p {
-    padding: 10px 35px;
-    font-size: 18px;
+#message p {                    
+    padding: 10px 35px;             /*set the top and bottom padding to 10 px , right and left padding to 35px*/
+    font-size: 18px;                /*set the font-size to 18px*/
 }
 .valid {
-    color: green;
+    color: green;                 /*set class vlaid to green*/
  }  
-.valid:before {
+.valid:before {                     
     position: relative;
     left: -35px;
     content: "✔";
